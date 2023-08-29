@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+:root {
+    --cor-principal: #FFFFFF;
+    --cor-secundaria: #F9F9F9;
+    --cor-terciaria: #C0C0C0;
+
+    --cor-botao: #167BF7;
+    --cor-fundo: #00030C;
+
+    --fonte-principal: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    font-family: var(--fonte-principal);
+    color: var(--cor-principal);
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-principal);
+}
+
+.container {
+    height: 100vh   ;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.primeiro__artigo {
+    background-image: url(/img/Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.combo {
+    margin: 0 10em;
+}
+
+.combo__titulo {
+    color: var(--cor-principal);
+    font-size: 28px;
+}
+
+.combo__imagem {
+    max-width: 348px;
+    margin: 1em 0 2em 0;
+}
+
+.combo__botao {
+    display: block;
+    padding: 16px;
+    border: 1px solid var(--cor-principal);
+    border-radius: 8px;
+    margin-bottom: 1em;
+}
+
+.botao__destaque {
+    background-color: var(--cor-botao);
+    border: 0px;
+}
+
+.combo__descricao {
+    color: var(--cor-terciaria);
+    font-size: 12px;
+}
+
+.segundo__artigo {
+    align-items: center;
+    margin: 0 15em;
+}
+
+.segundo__descricao {
+    padding: 2em;
+}
+
+.segundo__artigo__imagem {
+    width: 70%;
+}
+
+.descricao__titulo {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.descricao__paragrafo {
+    color: var(--cor-terciaria);
+    margin-bottom: 15px;
+}
+
+.segundario__botao {
+    display: inline-block;
+    border: 0px;
+    background-color: var(--cor-botao);
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;;
+}
+
+.dispositivos__titulo {
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--cor-principal);
+}
+
+.lista__item {
+    font-size: 32px;
+    color: var(--cor-principal);
+}
+
+.rodape {
+    text-align: center;
+}
+
+.rodape__logo {
+    margin: 3em 0;
+}
+
+.rodape__links {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    gap: 16px;
+}
+
+.rodape__texto {
+    color: var(--cor-terciaria);
+    font-size: 14px;
+    margin: 2em 0;
+}
+
+.lista__link a:hover {
+    color: var(--cor-botao);
+}
